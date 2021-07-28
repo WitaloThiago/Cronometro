@@ -8,6 +8,7 @@ var clean
 function iniciar() {
 
     clean = setInterval(()=> start(), tempo)
+    document.getElementById("btn").disabled = true
 }
 
 function zerar() {
@@ -18,13 +19,13 @@ function zerar() {
     ss = 0 
 
     document.getElementById("resultado").innerHTML = "00:00:00"
-
+    document.getElementById("btn").disabled = false
 }
 
 function pausar(){
 
     clearInterval(clean)
-
+    document.getElementById("btn").disabled = false
 }
 
 
