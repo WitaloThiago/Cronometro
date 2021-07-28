@@ -13,6 +13,10 @@ function iniciar() {
 function zerar() {
     clearInterval(clean)
 
+    hh = 0
+    mm = 0
+    ss = 0 
+
     document.getElementById("resultado").innerHTML = "00:00:00"
 
 }
